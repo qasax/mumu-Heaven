@@ -1,0 +1,1 @@
+Mouse position in app window: (895, 780), Timestamp: 1682586161

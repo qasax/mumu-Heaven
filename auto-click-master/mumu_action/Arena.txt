@@ -1,0 +1,17 @@
+Mouse position in app window: (100, 586), Timestamp: 1682516587
+Mouse position in app window: (519, 190), Timestamp: 1682516588
+Mouse position in app window: (341, 588), Timestamp: 1682516588
+Mouse position in app window: (560, 247), Timestamp: 1682516589
+Mouse position in app window: (505, 556), Timestamp: 1682516590
+Mouse position in app window: (648, 584), Timestamp: 1682516590
+Mouse position in app window: (518, 587), Timestamp: 1682516590
+Mouse position in app window: (649, 313), Timestamp: 1682516591
+Mouse position in app window: (1116, 592), Timestamp: 1682516592
+Mouse position in app window: (533, 598), Timestamp: 1682516604
+Mouse position in app window: (664, 180), Timestamp: 1682516606
+Mouse position in app window: (684, 541), Timestamp: 1682516606
+Mouse position in app window: (659, 583), Timestamp: 1682516606
+Mouse position in app window: (207, 564), Timestamp: 1682516607
+Mouse position in app window: (316, 573), Timestamp: 1682516608
+Mouse position in app window: (617, 145), Timestamp: 1682516608
+Mouse position in app window: (1135, 606), Timestamp: 1682516609

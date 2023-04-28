@@ -1,0 +1,5 @@
+Mouse position in app window: (190, 388), Timestamp: 1682559419
+Mouse position in app window: (246, 40), Timestamp: 1682559423
+Mouse position in app window: (317, 33), Timestamp: 1682559425
+Mouse position in app window: (394, 36), Timestamp: 1682559426
+Mouse position in app window: (466, 41), Timestamp: 1682559427

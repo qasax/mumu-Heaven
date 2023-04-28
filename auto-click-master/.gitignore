@@ -1,0 +1,7 @@
+*.png
+main.py
+*.jpg
+test (2).py
+test_num.py
+/.idea
+/__pycache__
