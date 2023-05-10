@@ -22,7 +22,7 @@ autoflag = True  # 自动走路
 speedflag = True  # 双击快进
 battleflag = False  # 战斗结束面板
 threadflag = True  # 最外层循环标识
-
+listener = 0
 core = mumu_core.Core()
 handle = windll.user32.FindWindowW(None, "MuMu模拟器12")
 controls = []
@@ -48,8 +48,6 @@ def on_press(key):
         listener.stop()
 
 
-listener = keyboard.Listener(on_press=on_press)  # 开启键盘事件监听
-listener.start()
 
 
 def move():
@@ -178,8 +176,31 @@ def gameover_doubleClick():
                 speedflag = True
                 battleflag = False
 
+def main():
+    global autoflag,speedflag,battleflag,threadflag,listener
+    autoflag = True  # 自动走路
+    speedflag = True  # 双击快进
+    battleflag = False  # 战斗结束面板
+    threadflag = True  # 最外层循环标识
+    listener = keyboard.Listener(on_press=on_press)  # 开启键盘事件监听
+    listener.start()
+    move_thread = threading.Thread(target=move)
+    get_image_speedup_thread = threading.Thread(target=get_image_speedup)
+    gameover_doubleClick_thread = threading.Thread(target=gameover_doubleClick)
+
+    # 启动线程
+    move_thread.start()
+    get_image_speedup_thread.start()
+    gameover_doubleClick_thread.start()
+
+    # 等待三个线程结束
+    move_thread.join()
+    get_image_speedup_thread.join()
+    gameover_doubleClick_thread.join()
 
 if __name__ == '__main__':
+    listener = keyboard.Listener(on_press=on_press)  # 开启键盘事件监听
+    listener.start()
     move_thread = threading.Thread(target=move)
     get_image_speedup_thread = threading.Thread(target=get_image_speedup)
     gameover_doubleClick_thread = threading.Thread(target=gameover_doubleClick)
